@@ -1,6 +1,5 @@
 import { useNavigate, Link } from "react-router-dom";
 import ServiceCard from "./ServiceCard";
-import PopularCard from "./PopularCard";
 import "../styles/style.css";
 import heroImage from '../assets/images/bgPic.jpg'
 import GiftHome from "./GiftHome";
