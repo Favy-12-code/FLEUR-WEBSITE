@@ -596,7 +596,7 @@ li {
 
 .services-section {
   width: 100%;
-  height: 100% !important;
+  height: 100vh !important;
   background: #F5E8DF; 
   padding: 70px 0px !important;
   position: relative;
@@ -961,8 +961,7 @@ li {
 }
 
 @media (max-width: 768px) {
-  .services-section {
-    height: 100vh; 
+  .services-section { 
     padding-top: 40px;
   }
   .service-card {
@@ -1054,7 +1053,7 @@ li {
 /*-----------------------------------------------
    RESPONSIVE MODAL
 ------------------------------------------------*/
-@media (max-width: 992px) {
+@media (max-width: 760px) {
   .modal-box {
     flex-direction: column;
     max-height: 90vh;
