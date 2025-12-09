@@ -96,7 +96,7 @@ return ( <header className="header" ref={headerRef}> <div className="header-cont
 
       <li className="dropdown-header" onClick={() => goToSection('/home', '#hero')}>
         <NavLink to="/home" onClick={() => setMenuOpen(false) }>
-          HOME AND AWAY
+          HOME
         </NavLink>
       </li>
 
