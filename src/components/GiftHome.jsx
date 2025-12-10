@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../styles/style.css';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import gift1 from '../assets/images/giftsImg/gift1.jpg';
 import gift2 from '../assets/images/giftsImg/gift2.jpg';
 import gift3 from '../assets/images/giftsImg/gift4.jpg';
@@ -12,7 +12,7 @@ const GiftHome = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const [currentImage, setCurrentImage] = useState(0);
-  const navigate = useNavigate();
+
   const images = [
     gift1,
     gift2,
@@ -50,7 +50,9 @@ const GiftHome = () => {
         <p className='giftDescription'>
           Who doesn’t love gifts that stay beautiful for a long time? Unlike fresh flowers that fade quickly, our dried arrangements, pampas, and handcrafted décor maintain their elegance season after season. Each piece is thoughtfully designed to preserve its beauty, turning your gesture into a lasting part of their home. At Fleur Studio, durability and artistry come together to create gifts that remain meaningful long after the moment has passed.
         </p>
-        <button onClick={() => navigate('/collections, #collectionsGift')} className='giftButton'>LET'S GO</button>
+          <Link to="/collections#gifts-collection" className='giftButton'>
+            LET'S GO
+          </Link>
       </div>
       <div className={`gift-image-container slide-right ${isVisible ? "visible" : ""}`}>
         <img src={images[currentImage]} alt="Gift" className="gift-image" />

@@ -4,6 +4,7 @@ import "../styles/style.css";
 import heroImage from '../assets/images/bgPic.jpg'
 import GiftHome from "./GiftHome";
 import PopularProductsHome from "./PopularProductsHome";
+import ContactHome from "./ContactHome";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -64,22 +65,10 @@ export default function Home() {
        <ServiceCard />
        <GiftHome />
        <PopularProductsHome />
+       <ContactHome />
 
 
-      {/* STAFF CTA */}
-      <section className="staff-section" id="contact">
-        <div className="staff-box">
-          <h3 className="section-title">Talk To Our Staff</h3>
-          <p className="section-sub">
-            Need guidance choosing your bouquet? Our team can help.
-          </p>
-          <div className="mt-4">
-            <Link to="/contact#contact-form" className="btn-dark">
-              Let's Talk
-            </Link>
-          </div>
-        </div>
-      </section>
+     
     </div>
   );
 }

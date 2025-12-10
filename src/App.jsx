@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link, useLocation, useNavigate 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
-// import CollectionsPage from "./components/CollectionsPage";
+import CollectionsPage from "./components/CollectionsPage";
 import AboutPage from "./components/AboutPage";
 
 import ContactPage from "./components/Contactpage";
@@ -32,7 +32,7 @@ export default function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/collections" element={<CollectionsPage />} /> */}
+          <Route path="/collections" element={<CollectionsPage />} /> 
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<Home />} />

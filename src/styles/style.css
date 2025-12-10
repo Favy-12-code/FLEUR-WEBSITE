@@ -596,7 +596,7 @@ li {
 
 .services-section {
   width: 100%;
-  height: 100vh !important;
+  height: 100% !important;
   background: #F5E8DF; 
   padding: 70px 0px !important;
   position: relative;
@@ -1170,11 +1170,12 @@ li {
   border-radius: 2px; 
   cursor: pointer; 
   transition: all 0.3s ease; 
-
+  display: inline-block;
 }
  .giftButton:hover {
-   transform: scale(1.06); 
-   background-color: #e8d6c5; 
+  transform: scale(1.06); 
+  background-color: #e8d6c5; 
+  color: var(--dark);
 }
 
 .gift-image-container { 
@@ -1187,6 +1188,7 @@ li {
   height: auto; 
   margin-bottom: 20px; 
   right: 7%;
+  z-index: 20;
 } 
 .gift-image {
    width: 360px; 
@@ -1378,6 +1380,7 @@ li {
   margin: 0 auto;
   padding: 50px;
   background-color: #e6cdb9;
+  z-index: 1;
 }
 
 .popular-header {
@@ -1472,7 +1475,7 @@ li {
   }
 
   .post-item {
-    height: auto; 
+    height: 435px; 
   }
 
   .popular-header h2 {
@@ -1483,6 +1486,129 @@ li {
     font-size: 13px;
   }
 }
+
+.productFade {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.productFade.visible {
+  opacity: 1;
+}
+
+.productUp {
+  opacity: 0;
+  transform: scale(0.85) translateY(50px);
+}
+.productUp.visible {
+   opacity: 1;
+    transform: scale(1) translateY(0);
+}
+
+.Contacthome {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #efe2d9;
+  border-bottom: #000 1px solid;
+  padding: 40px 100px 0 100px;
+}
+
+.contact-semiCircle {
+  width: 39%;
+  height: 68%;
+  background-color: #e6cdb9;
+  border-radius: 230px 230px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35px;
+}
+
+.contact-content {
+  text-align: center;
+  padding: 20px;
+  color: black;
+}
+
+.contact-content h1 {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1.18;
+  margin-bottom: 15px;
+}
+
+.contact-content p {
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.contactButton {
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  margin: 0 12px;
+  padding: 9px 20px;
+  border-radius: 2px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.85rem;
+  background-color: #f0e2d7;
+  color: #2f2a28;
+  border: none;
+  transition: transform 0.25s ease;
+}
+
+.contactButton:hover {
+  transform: scale(1.06);
+  background-color: #e8d6c5;
+  color: var(--dark);
+}
+
+@media (max-width: 950px) {
+  .contact-semiCircle {
+    width: 60%;
+  }
+}
+
+@media (max-width: 760px) {
+   .contact-semiCircle {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-semiCircle {
+    padding: 20px;
+  }
+  .contact-content p {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .Contacthome {
+    width: 100%;
+    padding: 40px 20px 0 20px;
+  }
+  .contact-semiCircle {
+    width: 90%;
+    padding: 20px;
+  }
+  .contact-content h1 {
+    font-size: 1.5rem;
+  }
+  .contact-content p {
+    font-size: 0.6rem;
+  }
+}
+
+
 
 
 /* =======================
