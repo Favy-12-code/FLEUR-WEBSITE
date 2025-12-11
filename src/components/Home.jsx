@@ -41,14 +41,15 @@ export default function Home() {
         <div className="hero-footer-wrapper">
           <div className="hero-social">
             <a href="https://www.instagram.com/fleu_rstudio?igsh=MXJhZmMxOWJyeTNhcg=="><i className="fab fa-instagram"></i></a>
-            <a href="#"><i className="fab fa-twitter"></i></a>
-            <a href="#"><i className="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/Fleurstudio0101?t=8a818QdFtIuDoveLyChKlA&s=09"><i className="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/share/1Abn7C8MS7/"><i className="fab fa-facebook-f"></i></a>
             <a
-              href="tel:+123456789"
+              href="tel:+234913438458"
               onClick={(e) => {
                 if (!/Mobi|Android/i.test(navigator.userAgent)) {
                   e.preventDefault();
-                  alert("Call us at +123456789");
+                  navigator.clipboard.writeText("+234 913 438 458");
+                  alert("Phone number copied: +234 913 438 458");
                 }
               }}
             >

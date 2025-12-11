@@ -29,7 +29,7 @@ const PopularProductsHome = () => {
   return (
     <section 
     ref={sectionRef} 
-    className= {`popular-section productFade ${isVisible ? "visible" : ""}`}>
+    className= "popular-section" >
       <div className="popular-header">
         <p>DRIED FLOWER COLLECTION</p>
         <h2>See What’s Popular</h2>
