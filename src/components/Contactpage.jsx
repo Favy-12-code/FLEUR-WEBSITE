@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
-import "../styles/Contactpage.css";
+import "../styles/ContactPage.css";
 
 export default function Contactpage() {
   const images = [
