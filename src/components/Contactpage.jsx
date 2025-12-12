@@ -1,14 +1,19 @@
 import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import "../styles/ContactPage.css";
+import img1 from "../assets/images/s1b.jpg";
+import img2 from "../assets/images/s2b.jpg";
+import img3 from "../assets/images/s3b.jpg";
+import img4 from "../assets/images/s2a.jpg";
+import img5 from "../assets/images/s2a.jpg";
 
 export default function Contactpage() {
   const images = [
-    "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
-    "https://images.unsplash.com/photo-1526045478516-99145907023c",
-    "https://images.unsplash.com/photo-1509043759401-136742328bb3",
-    "https://images.unsplash.com/photo-1519682337058-a94d519337bc",
-    "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9",
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
   ];
 
   const [index, setIndex] = useState(0);
