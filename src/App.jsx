@@ -6,7 +6,7 @@ import Home from "./components/Home";
 //import CollectionPage from "./components/CollectionPage";
 import AboutPage from "./components/AboutPage";
 
-import ContactPage from "./components/Contactpage";
+import Contactpage from "./components/Contactpage";
 
 
 function ScrollToHash() {
@@ -34,7 +34,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           {/*<Route path="/collections" element={<CollectionPage />} /> */}
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/contact" element={<Contactpage />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </main>
