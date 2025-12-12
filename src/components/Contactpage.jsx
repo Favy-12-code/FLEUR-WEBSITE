@@ -5,7 +5,7 @@ import img1 from "../assets/images/s1b.jpg";
 import img2 from "../assets/images/s2b.jpg";
 import img3 from "../assets/images/s3b.jpg";
 import img4 from "../assets/images/s2a.jpg";
-import img5 from "../assets/images/s2a.jpg";
+import img5 from "../assets/images/s2c.jpg";
 
 export default function Contactpage() {
   const images = [
